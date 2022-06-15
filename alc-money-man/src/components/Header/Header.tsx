@@ -1,11 +1,18 @@
+import { Layout, Menu } from "antd";
+import styled from "styled-components";
 
+const StyledHeader = styled(Layout.Header)`
+& {
+  background: white;
+}
+`;
 
-const PageHeader = () => {
+const Header = () => {
   return (
-    <h1>
-      Header
-    </h1>
-  );
-};
+    <StyledHeader>
+      <h1>Header</h1>
+    </StyledHeader>
+  )
+}
 
-export default PageHeader;
+export default Header;
