@@ -1,11 +1,4 @@
-import { Layout, Menu } from "antd";
-import styled from "styled-components";
-
-const StyledHeader = styled(Layout.Header)`
-& {
-  background: white;
-}
-`;
+import StyledHeader from "../Styles/Header.styled";
 
 const Header = () => {
   return (

@@ -1,11 +1,4 @@
-import { Layout, Menu } from "antd";
-import styled from "styled-components";
-
-const StyledFooter = styled(Layout.Footer)`
-& {
-  background: white;
-}
-`;
+import StyledFooter from "../Styles/Footer.styled";
 
 const Footer = () => {
   return (

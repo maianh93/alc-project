@@ -10,6 +10,7 @@ import IncomeAccounting from './pages/IncomeAccounting/IncomeAccounting';
 import DetailReport from './pages/DetailReport/DetailReport';
 import SynthesisReport from './pages/SynthesisReport/SynthesisReport';
 import DeclareAssets from './pages/Declare/DeclareAssets';
+import DeclareIncomeSpending from './pages/Declare/DeclareIncomeSpending';
 
 const root = createRoot(document.getElementById("root"));
 
@@ -23,6 +24,7 @@ root.render(
           <Route path="/detailreport" element={<DetailReport />} />
           <Route path="/synthesisreport" element={<SynthesisReport />} />
           <Route path="/declare/assets" element={<DeclareAssets />} />
+          <Route path="/declare/incomeandspending" element={<DeclareIncomeSpending />} />
           <Route path="/declare/:id" element={<Declare />} />
           <Route path="/incomeaccounting/:id" element={<IncomeAccounting />} />
           <Route path="/spendaccounting/:id" element={<SpendAccounting />} />

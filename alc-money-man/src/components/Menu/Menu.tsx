@@ -28,7 +28,7 @@ const items = [
         icon: <MailOutlined />
       },
       {
-        label: <Link to="/declare/incomingandspending">Thu - chi</Link>,
+        label: <Link to="/declare/incomeandspending">Thu - chi</Link>,
         key: "incomingandspending",
         icon: <MailOutlined />
       },

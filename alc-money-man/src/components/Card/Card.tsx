@@ -3,8 +3,6 @@ import styled from "styled-components";
 import React from 'react';
 const { Meta } = Card;
 
-import DetailModal from '../Modal/Modal';
-
 const StyledCard = styled(Card)`
   & {
     border-radius: 20px;
@@ -22,7 +20,7 @@ const StyledCard = styled(Card)`
   }
 `;
 
-const CardItem = ({ img, title, description }) => (
+const CardItem = ({ img, title, description, onClick }) => (
     <>
     <StyledCard
         hoverable
@@ -30,6 +28,7 @@ const CardItem = ({ img, title, description }) => (
             width: 240,
         }}
         cover={<img alt={title} src={img} />}
+        onClick={onClick}
     >
         <Meta title={title} description={description} />
     </StyledCard>
