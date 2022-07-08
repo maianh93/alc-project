@@ -12,16 +12,14 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <GlobalStyles />
+      <Header />
       <Layout>
-        <Header />
-        <Layout>
-          <MainMenu />
-          <Layout.Content style={{ padding: "20px" }}>
-            <Outlet />
-          </Layout.Content>
-        </Layout>
-        <Footer />
+        <MainMenu />
+        <Layout.Content style={{ padding: "20px" }}>
+          <Outlet />
+        </Layout.Content>
       </Layout>
+      <Footer />
     </div>
   );
 };
