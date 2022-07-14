@@ -1,13 +1,13 @@
-import { Col, Row } from 'antd';
-import { Button, Modal } from 'antd';
-import { useState } from 'react';
+import { Col, Modal, Row } from 'antd';
+import { useState, FC } from 'react';
 import styled from 'styled-components';
 
 import DeclareIncomeSpendTable from '../../components/Table/DeclareIncomeSpendTable';
 
+import React from 'react';
 import CardItem from "../../components/Card/Card";
-import incomeImage from "/images/income/income-icon.png";
 import spendImage from "/images/expense/expense-icon.jpg";
+import incomeImage from "/images/income/income-icon.png";
 
 
 const StyledModal = styled(Modal)`
@@ -25,7 +25,7 @@ const StyledHeading = styled.h1`
 }
 `
 
-const DeclareIncomeSpending: React.FC = () => {
+const DeclareIncomeSpending: FC = () => {
   const [visible, setVisible] = useState(false);
 
   return (

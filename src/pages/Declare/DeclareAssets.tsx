@@ -1,13 +1,13 @@
-import { Col, Row } from 'antd';
-import { Button, Modal } from 'antd';
-import { useState } from 'react';
+import { Col, Modal, Row } from 'antd';
+import { FC, useState } from 'react';
 import styled from 'styled-components';
 
 import DeclareCCETable from '../../components/Table/DeclareCCETable';
 
+import React from 'react';
 import CardItem from "../../components/Card/Card";
-import cashImage from "/images/assets/cash.webp";
 import bankImage from "/images/assets/bank.jpg";
+import cashImage from "/images/assets/cash.webp";
 import fixedAssetImagge from "/images/assets/fixed-asset.jpg";
 
 const StyledModal = styled(Modal)`
@@ -25,7 +25,7 @@ const StyledHeading = styled.h1`
 }
 `
 
-const DeclareAssets: React.FC = () => {
+const DeclareAssets: FC = () => {
   const [visible, setVisible] = useState(false);
 
   return (

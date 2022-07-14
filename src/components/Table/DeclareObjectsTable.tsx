@@ -1,7 +1,6 @@
 import { Table } from 'antd';
 import type { ColumnsType } from 'antd/lib/table';
-import { useState } from 'react';
-import React from 'react';
+import React, { useState, FC } from 'react';
 import SelectForm from '../Select/Select';
 
 interface DataType {
@@ -9,6 +8,10 @@ interface DataType {
   name: string;
   prop: string;
   note?: string;
+}
+
+type ComponentProps = {
+  handleOpenAddingTable: () => void
 }
 
 const columns: ColumnsType<DataType> = [
@@ -40,11 +43,13 @@ const data: DataType[] = [
 ];
 
 
-const DeclareIncomeSpendTable: React.FC = () => (
+const DeclareIncomeSpendTable: FC<ComponentProps> = ({
+  handleOpenAddingTable,
+}: ComponentProps) => (
   <div>
     <h1 className="center uppercase">Đối tượng</h1>
     <Table columns={columns} dataSource={data} size="middle" />
-    <p className="link cursor">Thêm đối tượng...</p>
+    <p onClick={handleOpenAddingTable} className="link cursor">Thêm đối tượng...</p>
   </div>
 );
 
