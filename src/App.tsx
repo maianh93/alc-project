@@ -7,8 +7,9 @@ import GlobalStyles from "./components/Styles/Global.styled";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import MainMenu from "./components/Menu/Menu";
+import React, {FC} from "react";
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
     <div className="App">
       <GlobalStyles />

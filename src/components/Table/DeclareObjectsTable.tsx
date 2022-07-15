@@ -1,7 +1,6 @@
 import { Table } from 'antd';
 import type { ColumnsType } from 'antd/lib/table';
-import React, { useState, FC } from 'react';
-import SelectForm from '../Select/Select';
+import React, { FC } from 'react';
 
 interface DataType {
   key: React.Key;

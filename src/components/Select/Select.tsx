@@ -1,9 +1,10 @@
 import { Select } from 'antd';
+import React from 'react';
 const { Option } = Select;
 
-const handleChange = (value) => {
-    console.log(`selected ${value}`);
-};
+const handleChange = (value: { value: string; label: React.ReactNode }) => {
+    console.log(value);
+  };
 
 const SelectForm = ( {value, label} ) => (
     <>

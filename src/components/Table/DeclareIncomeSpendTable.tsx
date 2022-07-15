@@ -1,8 +1,9 @@
 import { Table } from 'antd';
 import type { ColumnsType } from 'antd/lib/table';
 import { useState } from 'react';
-import React from 'react';
+import React, {FC} from 'react';
 import SelectForm from '../Select/Select';
+import { Option } from 'antd/lib/mentions';
 
 interface DataType {
   key: React.Key;
@@ -54,7 +55,7 @@ const option: Option[] = [
 ]
 
 
-const DeclareIncomeSpendTable: React.FC = () => (
+const DeclareIncomeSpendTable: FC = () => (
   <div>
     <h1 className="center uppercase">Khoản thu</h1>
     <SelectForm

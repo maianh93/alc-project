@@ -1,7 +1,6 @@
 import { Table } from 'antd';
 import type { ColumnsType } from 'antd/lib/table';
-import { useState } from 'react';
-import React from 'react';
+import React, { FC } from 'react';
 
 interface DataType {
   key: React.Key;
@@ -34,7 +33,7 @@ const data: DataType[] = [
 ];
 
 
-const DeclareCCETable: React.FC = () => (
+const DeclareCCETable: FC = () => (
   <div>
     <Table columns={columns} dataSource={data} size="middle" />
     <p className="link cursor">Thêm nguồn tiền...</p>

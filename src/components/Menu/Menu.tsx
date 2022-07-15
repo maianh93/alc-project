@@ -1,3 +1,4 @@
+import React, {FC} from "react";
 import { Layout, Menu } from "antd";
 import "antd/dist/antd.min.css";
 import { useState } from "react";
@@ -100,7 +101,7 @@ const items = [
   }
 ];
 
-  const MainMenu: React.FC = () => {
+  const MainMenu: FC = () => {
     const [collapsed, setCollapsed] = useState(false);
   
     return (
